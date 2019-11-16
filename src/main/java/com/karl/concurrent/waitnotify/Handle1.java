@@ -1,17 +1,16 @@
-package com.karl.concurrent.wait_notify;
+package com.karl.concurrent.waitnotify;
 
 import java.util.Random;
 
 /**
- * 描述:  处理类2
+ * 描述:  处理类
  *
  * @author mh
- * @create 2019-11-07 17:15
+ * @create 2019-11-07 17:12
  */
-public class Handle2 extends Thread {
+public class Handle1 extends Thread{
     private MyObject myObject;
-
-    public Handle2(MyObject myObject) {
+    public Handle1(MyObject myObject) {
         this.myObject = myObject;
     }
 
@@ -23,7 +22,7 @@ public class Handle2 extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            myObject.decrease();
+            myObject.increase();
         }
 
     }

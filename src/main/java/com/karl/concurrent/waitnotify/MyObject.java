@@ -1,4 +1,4 @@
-package com.karl.concurrent.wait_notify;
+package com.karl.concurrent.waitnotify;
 
 /**
  * 描述:  自定义类
